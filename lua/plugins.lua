@@ -8,6 +8,9 @@ vim.cmd [[packadd packer.nvim]]
 
 packer.startup(function(use)
   use 'wbthomason/packer.nvim'
+  use("glepnir/dashboard-nvim") -- dashboard
+  
+  use("ahmedkhalf/project.nvim") -- project
   use {
     'svrana/neosolarized.nvim',
     requires = { 'tjdevries/colorbuddy.nvim' }
@@ -37,10 +40,10 @@ packer.startup(function(use)
   use 'windwp/nvim-ts-autotag'
   use 'norcalli/nvim-colorizer.lua'
   use 'folke/zen-mode.nvim'
-  --use({
-  --  "iamcco/markdown-preview.nvim",
-  --  run = function() vim.fn["mkdp#util#install"]() end,
-  --})
+  use({
+    "iamcco/markdown-preview.nvim",
+    run = function() vim.fn["mkdp#util#install"]() end,
+  })
   use 'akinsho/nvim-bufferline.lua'
   -- use 'github/copilot.vim'
 
