@@ -1,5 +1,9 @@
 vim.cmd("autocmd!")
 
+
+vim.opt.guifont = { "Hack Nerd Font Mono", "h12" }
+vim.g.neovide_cursor_vfx_mode = "sonicboom"
+
 vim.scriptencoding = 'utf-8'
 vim.opt.encoding = 'utf-8'
 vim.opt.fileencoding = 'utf-8'
